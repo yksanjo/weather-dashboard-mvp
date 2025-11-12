@@ -1,0 +1,132 @@
+.current-weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.location h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.location p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+.weather-icon-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.temperature-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.main-temp {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.temp-value {
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.temp-unit {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.temp-details {
+  flex: 1;
+}
+
+.description {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.feels-like {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+.sun-times {
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sun-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sun-icon {
+  font-size: 2rem;
+}
+
+.sun-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.sun-time {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .temp-value {
+    font-size: 4rem;
+  }
+
+  .temp-unit {
+    font-size: 2rem;
+  }
+
+  .location h2 {
+    font-size: 2rem;
+  }
+
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
