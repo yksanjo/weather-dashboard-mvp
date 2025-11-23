@@ -1,5 +1,9 @@
 # 🌤️ Weather Dashboard MVP
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/weather-dashboard-mvp?style=social)](https://github.com/yksanjo/weather-dashboard-mvp/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/weather-dashboard-mvp.svg)](https://github.com/yksanjo/weather-dashboard-mvp/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/weather-dashboard-mvp.svg)](https://github.com/yksanjo/weather-dashboard-mvp/issues)
+[![Last commit](https://img.shields.io/github/last-commit/yksanjo/weather-dashboard-mvp.svg)](https://github.com/yksanjo/weather-dashboard-mvp/commits/main)
+
+
 A beautiful weather dashboard with stunning visualizations, real-time forecasts, and interactive charts.
 
 ## ✨ Features
