@@ -1,150 +1,79 @@
-# 🌤️ Weather Dashboard MVP
+# weather-dashboard-mvp
 
 A beautiful weather dashboard with stunning visualizations, real-time forecasts, and interactive charts.
 
-## ✨ Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- **Current Weather Display**: Real-time weather with beautiful icons and animations
-- **24-Hour Forecast**: Hourly temperature chart with area visualization
-- **5-Day Forecast**: Daily forecast with min/max temperature bars
-- **Weather Statistics**: Humidity, wind speed, pressure, and visibility
-- **Interactive Charts**: Beautiful Recharts visualizations
-- **Dynamic Backgrounds**: Background changes based on temperature
-- **Multiple Locations**: Search for any city worldwide
-- **Responsive Design**: Works on desktop and mobile
+## Solution Overview
 
-## 🚀 Quick Start
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
-- OpenWeatherMap API key (free at [openweathermap.org](https://openweathermap.org/api))
+- Git
+- Project runtime/toolchain for this repo
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd weather-dashboard-mvp
-```
-
-2. Install all dependencies:
-```bash
-npm run install-all
-```
-
-3. Set up your API key:
-```bash
-cd server
-cp .env.example .env
-# Edit .env and add your OpenWeatherMap API key
-```
-
-4. Get your free API key:
-   - Go to [openweathermap.org](https://openweathermap.org/api)
-   - Sign up for a free account
-   - Navigate to API keys section
-   - Copy your API key
-   - Add it to `server/.env`:
-     ```
-     OPENWEATHER_API_KEY=your_api_key_here
-     ```
-
-### Running the Application
-
-Start both the server and client in development mode:
+### Local Setup
 
 ```bash
-npm run dev
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-Or run them separately:
+## Usage
 
-```bash
-# Terminal 1 - Start backend server
-npm run server
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-# Terminal 2 - Start frontend client
-npm run client
-```
+## Quality Standards
 
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:3001
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-## 📁 Project Structure
+## Security
 
-```
-weather-dashboard-mvp/
-├── server/                 # Backend API
-│   ├── index.js           # Express server and weather API routes
-│   ├── package.json
-│   └── .env.example       # Environment variables template
-├── client/                # React frontend
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   │   ├── SearchBar.jsx
-│   │   │   ├── CurrentWeather.jsx
-│   │   │   ├── HourlyForecast.jsx
-│   │   │   ├── DailyForecast.jsx
-│   │   │   └── WeatherStats.jsx
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── vite.config.js
-├── package.json           # Root package.json
-└── README.md
-```
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-## 🎯 API Endpoints
+## Contributing
 
-- `GET /api/weather/:city` - Get current weather by city name
-- `GET /api/weather/coord/:lat/:lon` - Get weather by coordinates
-- `GET /api/forecast/:city` - Get 5-day forecast
-- `GET /api/hourly/:city` - Get 24-hour hourly forecast
-- `GET /api/health` - Health check
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-## 🎨 Visualizations
+## Roadmap
 
-- **Temperature Area Chart**: 24-hour temperature trend
-- **Bar Chart**: Min/Max temperatures for 5-day forecast
-- **Pie Chart**: Humidity level visualization
-- **Dynamic Backgrounds**: Changes based on temperature ranges
+Track upcoming milestones, technical debt, and planned feature work.
 
-## 🛠️ Tech Stack
+## Support
 
-- **Frontend**: React, Vite, Recharts
-- **Backend**: Node.js, Express, Axios
-- **API**: OpenWeatherMap API
-- **Styling**: CSS3 with glassmorphism effects
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
-## 📝 License
+## License
 
-MIT License - feel free to use this project for learning or as a starting point for your own weather app!
-
-## 🚢 Deployment
-
-To deploy this application:
-
-1. **Frontend**: Build and deploy to Vercel, Netlify, or GitHub Pages
-   ```bash
-   cd client
-   npm run build
-   ```
-
-2. **Backend**: Deploy to Heroku, Railway, or Render
-   - Make sure to set the `OPENWEATHER_API_KEY` environment variable
-   - Update the API URL in the frontend if needed
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## 📧 Support
-
-If you have questions or need help, please open an issue on GitHub.
-
----
-
-Made with ❤️ for beautiful weather visualizations
-
+This project is released under the MIT License.
