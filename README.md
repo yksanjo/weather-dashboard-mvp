@@ -1,6 +1,11 @@
 # weather-dashboard-mvp
 
-A beautiful weather dashboard with stunning visualizations, real-time forecasts, and interactive charts.
+## Detailed Description
+
+weather-dashboard-mvp is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
+
+## Problem Statement
 
 Describe the user or business problem this project solves, the target users, and expected outcomes.
 
